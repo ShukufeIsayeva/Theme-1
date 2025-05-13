@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: black;
+  --white-color: white;
+}
+header {
+  z-index: 2;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 60px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu > li{
+  position: relative;
+}
+.submenu{
+
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color:rgb(255, 255, 255);
+  display: none;
+  /* font-size: 10px; */
+  top:100%;
+  left: 0;
+  width: 160px;
+
+}
+.submenu a{
+  color: rgb(0, 0, 0);
+  font-size: 5px;
+
+}
+.menu > li:hover .submenu{
+  display: block;
+   background-color:black;
+  color:rgb(128, 23, 23);
+  font-size: 5px;
+
+  
+}
+
+.menu a {
+  margin: 0;
+  padding: 20px 20px 18px 20px;
+  font-size: 25px;
+  color: white;
+}
+ul a:hover {
+  background-color: rgb(192, 189, 189);
+}
+header nav .icon {
+  display: flex;
+  color: var(--white-color);
+  font-size: 20px;
+  padding-right: 20px;
+}
+.icon:hover {
+  background-color: red;
+  padding: 25px 20px 18px 20px;
+}
+
+.images {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.images .title {
+  top: 0;
+  left: 0;
+
+  height: 800px;
+  width: 100%;
+  /* position: absolute; */
+  opacity: 1;
+  animation: slide 15s infinite;
+}
+.images .title img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.images .title .text {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: aliceblue;
+}
+.images .text p {
+  color: var(--white-color);
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  /* height: 80%; */
+  padding: 50px;
+  background-color: var(--white-color);
+}
+.container .band {
+  text-align: center;
+  color: black;
+}
+.band h4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: grey;
+}
+.container-band {
+  background-color: white;
+  width: 60%;
+  padding: 20px 50px 20px 50px;
+  margin: auto;
+}
+.container p {
+  text-align: justify;
+  color: black;
+  font-size: 18px;
+}
+.container-band .band-img {
+  display: flex;
+  gap: 80px;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.name p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.container-section {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 90px;
+}
+.container-section .tour-dates {
+  width: 100%;
+  height: 200px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container-section .tour-dates h1 {
+  color: white;
+  padding-top:80px;
+}
+
+.container-section .tour-dates h4 {
+  color: grey;
+  padding:15px 0 15px 10px;
+
+}
+.container-section .content {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+.container-section .container-menu {
+  background-color: white;
+  width: 100%;
+}
+.content .container-menu .date {
+  border-bottom: 1px solid grey;
+  color: grey;
+  padding: 10px;
+}
+.content .container-menu .date span:first-child {
+  color: grey;
+  margin-right: 15px;
+}
+.content .container-menu .date span:last-child {
+  background-color: rgb(240, 53, 53);
+  color: var(--white-color);
+  padding: 3px 6px 3px 6px;
+  font-weight: 500;
+}
+
+.content .city {
+  margin-top: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 10px;
+}
+.content .city img {
+  width: 200px;
+  height: 200px;
+  width: 100%;
+}
+.content .city .newyork,
+.paris,
+.francisco {
+  width: 100%;
+  background-color: white;
+}
+
+
+.content .city h4 {
+  font-weight: 800;
+}
+.content .city p {
+  margin-top: 15px;
+}
+.content .city .info-text {
+  text-align: justify;
+  padding: 20px;
+}
+.content .city .button {
+  text-align: justify;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;
+}
+.content .city .button button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 15px 10px 15px;
+}
+.content .city .button button:hover{
+  background-color: grey;
+  color: white;
+  border: none;
+}
+.content .date  {
+  color: grey;
+}
+.content .container-menu .number{
+}
+.content .container-menu .date {
+  margin-right: 15px;
+}
+.content .container-menu .date .number{
+  margin-right: 15px;
+}
+.content .container-menu p{
+  color: var(--white-color);
+  text-align: center;
+  float: right;
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+/* SECTOION CONTACT START  */
+
+.contact{
+  background-color:var(--white-color);
+  height: 50%;
+
+}
+.contact .container .contact-menu{
+  text-align: center;
+}
+.contact .container .contact-menu h1{
+padding: 20px 0 15px 0;
+}
+.contact .container .contact-menu h4{
+  color: grey;
+  margin-left: 30px;
+  padding-bottom: 40px;
+}
+.contact .container .container-info{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+gap: 50px;
+}
+.contact .container .container-info .info-left, .info-right{
+width: 100%;
+}
+ .container-info .info-right .input {
+  width: 100%;
+display: flex;
+gap: 15px;
+border: 1px solid grey;
+ }
+ .input input{
+  flex: 1;
+padding: 5px 15px 5px 2px;
+margin-bottom: 5px;
+ }
+ textarea{
+  width: 100%;
+
+ }
+ .button button{
+  float: right;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white-color);
+ }
+
+ .button button:hover{
+  background-color: grey;
+  color: black;
+ }
+
+
+ 
+
+
+.contact .container .container-info .info-left .info-item{
+  display: flex;
+  gap: 15px;
+  padding-bottom: 5px;
+
+}
+
+
+
+
+.images img{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+footer{
+  width: 100%;
+  height: 100px;
+}
+footer .icons{
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  color: grey;
+}
+.icons i{
+ font-size: 20px;
+}
+
